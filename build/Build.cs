@@ -5,7 +5,7 @@ using Nuke.Common.ProjectModel;
 using Nuke.Common.Tooling;
 using Nuke.Common.Tools.DotNet;
 
-[GitHubActions("nugetpush", GitHubActionsImage.UbuntuLatest, On = [GitHubActionsTrigger.WorkflowDispatch],
+[GitHubActions("nugetpush", GitHubActionsImage.WindowsLatest, On = [GitHubActionsTrigger.WorkflowDispatch],
     InvokedTargets = [nameof(Push)],
     ImportSecrets = ["NugetApiKey"],
     AutoGenerate = true
@@ -35,6 +35,7 @@ class Build : NukeBuild
         .DependsOn(Clean)
         .Executes(() =>
         {
+            
             DotNetTasks.DotNetRestore();
         });
 
@@ -83,5 +84,4 @@ class Build : NukeBuild
 
             );
         });
-
 }
