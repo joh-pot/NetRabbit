@@ -61,6 +61,6 @@ internal sealed class GenericMessageHandlersHostedService<T> : IHostedService
         }
         _cts?.Dispose();
 
-        await _subscriberService.DisposeAsync();
+        await _subscriberService.DisposeAsync().ConfigureAwait(false)  ;
     }
 }

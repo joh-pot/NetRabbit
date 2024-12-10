@@ -5,7 +5,8 @@
 	  <IsRoslynComponent>true</IsRoslynComponent>
 	  <LangVersion>latest</LangVersion>
 	  <Authors>Johan Potgieter</Authors>
-	  <Version>1.0.0</Version>
+	  <Version>1.0.0-beta</Version>
+	  <RepositoryUrl>https://github.com/joh-pot/NetRabbit</RepositoryUrl>
 	  <EnableNETAnalyzers>True</EnableNETAnalyzers>
 	  <AnalysisLevel>6.0-all</AnalysisLevel>
 	  <IncludeBuildOtput>false</IncludeBuildOtput>

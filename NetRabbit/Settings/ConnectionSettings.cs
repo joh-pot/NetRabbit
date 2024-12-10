@@ -12,6 +12,7 @@ public class ConnectionSettings : IConnectionSettings
 
     public ConnectionSettings(IBasicConnectionSettings basicConnectionSettings)
     {
+        ArgumentNullException.ThrowIfNull(basicConnectionSettings);
         Username = basicConnectionSettings.Username;
         Password = basicConnectionSettings.Password;
         ConnectionString = basicConnectionSettings.ConnectionString;

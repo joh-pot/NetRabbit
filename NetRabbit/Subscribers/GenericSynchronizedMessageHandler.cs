@@ -9,7 +9,7 @@ using NetRabbit.Settings;
 
 namespace NetRabbit.Subscribers
 {
-    public abstract class SynchronizedMessageHandler<T> : IDisposable//ISynchronizedMessageHandler<T>
+    public abstract class SynchronizedMessageHandler<T> : IDisposable
     {
         public abstract IEnumerable<SubscriberSettings> GetSubscriberSettings();
         public abstract Task<IBasicConnectionSettings> GetBasicConnectionSettingsAsync(CancellationToken cancellationToken = default);

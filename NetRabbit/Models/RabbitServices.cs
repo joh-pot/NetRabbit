@@ -92,7 +92,8 @@ public sealed class RabbitServices
                          });
         ServiceCollection.AddSingleton<ISubscriberService<SynchronizedMessageHandler>, SynchronizedMessageHandlerSubscriberService>();
         ServiceCollection.AddSingleton<IConsumerService<SynchronizedMessageHandler>, SynchronizedMessageHandlerConsumerService>();
-        ServiceCollection.AddSingleton(typeof(SynchronizedMessageHandler), typeof(T));
+        //ServiceCollection.AddSingleton(typeof(SynchronizedMessageHandler), typeof(T));
+        ServiceCollection.AddSingleton<SynchronizedMessageHandler, T>();
         return this;
     }
 
@@ -116,7 +117,8 @@ public sealed class RabbitServices
                          });
         ServiceCollection.AddSingleton<ISubscriberService<SynchronizedMessageHandler<TPayload>>, SynchronizedMessageHandlerSubscriberService<TPayload>>();
         ServiceCollection.AddSingleton<IConsumerService<SynchronizedMessageHandler<TPayload>>, SynchronizedMessageHandlerConsumerService<TPayload>>();
-        ServiceCollection.AddSingleton(typeof(SynchronizedMessageHandler<TPayload>), typeof(T));
+        ServiceCollection.AddSingleton<SynchronizedMessageHandler<TPayload>, T>();
+        //ServiceCollection.AddSingleton(typeof(SynchronizedMessageHandler<TPayload>), typeof(T));
         return this;
     }
 

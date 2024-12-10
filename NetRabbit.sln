@@ -9,12 +9,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benchmarks", "Benchmarks\Be
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetRabbit.Extensions", "NetRabbit.Extensions\NetRabbit.Extensions.csproj", "{1E821ADA-FA7A-4308-80EB-9F4186144DCC}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", "build\_build.csproj", "{48B43D05-83E3-458A-B53F-1164744D376A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48B43D05-83E3-458A-B53F-1164744D376A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48B43D05-83E3-458A-B53F-1164744D376A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90C23CAD-9093-40FA-B207-C0B05CA5B2A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{90C23CAD-9093-40FA-B207-C0B05CA5B2A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90C23CAD-9093-40FA-B207-C0B05CA5B2A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
