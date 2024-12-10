@@ -17,7 +17,7 @@ class Build : NukeBuild
     [Parameter("Configuration to build - Default is 'Debug' (local) or 'Release' (server)")]
     readonly Configuration Configuration = IsLocalBuild ? Configuration.Debug : Configuration.Release;
 
-    [Secret] readonly string NugetApiKey;
+    [Secret][Parameter] readonly string NugetApiKey;
     [Parameter] string NugetApiUrl = "https://api.nuget.org/v3/index.json";
 
     readonly AbsolutePath ArtifactsDirectory = RootDirectory / ".nuke" / "artifacts";
